@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./prism/prism.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="app-components/app-header.css">
+    <link rel="stylesheet" href="app-components/app-sidebar.css">
+    <link rel="stylesheet" href="app-components/code-block.css">
+    <link rel="stylesheet" href="styles/colors.css">
+    <title>Colors</title>
+    <style>
+        .example-link {
+            color: #3F51B5;
+            text-decoration: none; /* No underline by default */
+        }
+        .example-link:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        .view-logos-btn {
+            background-color: #3F51B5;
+            margin-top: 20px;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none; /* No underline */
+            display: inline-block;
+            font-size: 16px;
+        }
+        .view-logos-btn:hover {
+            background-color: #2c3b8f; /* Darker blue on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <script defer src="prism/prism.js"></script>
+    <script defer src="app-components/app-header.js"></script>
+    <script defer src="app-components/app-sidebar.js"></script>
+    <script defer src="app-components/code-block.js"></script>
+
+    <app-header></app-header>
+    <app-sidebar id="logos"></app-sidebar>
+    <div class="page-content">
+        <div class="subhead-lvl_one">
+            <h1>Logos</h1>
+            <div class="page-nav">
+                <a href="#" class="filter-btn active"><object class="svg svg_default" data="/assets/icons/code_blocks.svg"></object>Code
+                    <div class="bottom-border"></div>
+                </a>
+                <a href="https://www.figma.com/proto/DjyC0pnNYe0Efg0IYXlveL/ACR-Master-Component-Library?page-id=0%3A1&node-id=1396-3782&node-type=frame&viewport=-3450%2C-8315%2C0.4&t=dzTt71hkLlzeV2qV-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=228%3A9943&show-proto-sidebar=1" target="_blank" class="filter-btn">
+                    <object class="svg svg_default" data="/assets/icons/deployed_code.svg"></object>Examples
+                    <div class="bottom-border"></div>
+                </a>
+                <a href="https://www.figma.com/design/weDHaTguL7Ojovq1ot4440/Access-to-Dev-Mode?node-id=63-1363&t=AbXwM4W2a66JE1hp-1" target="_blank" class="filter-btn">
+                    <object class="svg svg_default" data="/assets/icons/developer_guide.svg"></object>Guidelines
+                    <div class="bottom-border"></div>
+                </a>                
+            </div>
+        </div>
+        <div class="container">
+            <div class="width-100">
+                <div class="block">
+                    <div class="block-card active" id="code-block">
+                        <div id="logos-css">
+                            <section>
+                                <h3>Access to Dev View to download Logos</h3>
+                                <p>
+                                    To access the repository of logos and download them as SVG, PNG, or JPG files, go to Figma. From there, you can easily inspect the designs and download the assets you need. If you have any questions, feel free to reach out!
+                                </p>
+                                <a href="https://www.figma.com/design/weDHaTguL7Ojovq1ot4440/Access-to-Dev-Mode?node-id=63-1455&m=dev" target="_blank" class="view-logos-btn">Go to Figma</a>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../script.js"></script>
+</body>
+
+</html>
